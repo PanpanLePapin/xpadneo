@@ -2,6 +2,7 @@
 
 ccflags-y += -DVERSION=$(VERSION)
 obj-m += hid-xpadneo.o
+ccflags-y += -std=gnu99
 
 hid-xpadneo-y += \
 	xpadneo/consumer.o \
